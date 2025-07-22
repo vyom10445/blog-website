@@ -1,5 +1,5 @@
 import "./posts.css";
-import Post from "./components/post/Post.jsx";
+import Post from "../post/Post.jsx";
 
 export default function Posts() {
   return (

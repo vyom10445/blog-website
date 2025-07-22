@@ -19,7 +19,7 @@ function NavBar() {
         </ul>
       </div>
       <div className="topRight">
-        <img className="topImg" src="./public/car.jpg" alt="" />
+        <img className="topImg" src="/car.jpg" alt="" />
         <i className=" topSearch fa-solid fa-magnifying-glass"></i>
       </div>
     </div>

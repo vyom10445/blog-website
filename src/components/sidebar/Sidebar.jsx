@@ -5,7 +5,7 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
-        <img src="./car.jpg" alt="" />
+        <img src="/car.jpg" alt="" />
         <p>
           I'm Vyom, currently figuring out React and built this blog site as
           part of the process.
