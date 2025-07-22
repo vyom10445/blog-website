@@ -1,5 +1,5 @@
 import "./post.css";
 
 export default function Post() {
-  return <div className="posts">Post</div>;
+  return <div>Post</div>;
 }
