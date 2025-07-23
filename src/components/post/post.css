@@ -1,17 +1,16 @@
 .post {
-  width: 385px;
-  margin: 0px 25px 40px 25px;
+  width: 280px;
+  margin: 0px 0px 40px 0px; /* Changed horizontal margins to 0 */
   display: flex;
   flex-direction: column;
 }
 
 .postImg {
-  width: 385px;
-  height: 280px;
+  width: 280px; /* Reduced from 385px, matching the new post width */
+  height: 200px; /* Adjusted height to maintain aspect ratio, from 280px */
   object-fit: cover;
   border-radius: 7px;
 }
-
 .postInfo {
   display: flex;
   flex-direction: column;

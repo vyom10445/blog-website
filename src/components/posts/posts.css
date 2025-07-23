@@ -3,6 +3,8 @@
   margin-top: 170px;
   display: flex;
   flex-wrap: wrap;
+  gap: 30px; /* Adds 30px space between items */
+  justify-content: center; /* Centers items horizontally */
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
