@@ -1,9 +1,7 @@
 import "./navbar.css";
 import { Link } from "react-router-dom";
 
-function NavBar() {
-  const user = false;
-
+function NavBar({ user }) {
   return (
     <div className="top">
       <div className="topLeft">

@@ -7,15 +7,16 @@ import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
+import React, { useState } from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  const user = true;
+  const [user, setUser] = useState(true);
 
   return (
     <Router>
-      <NavBar />
+      <NavBar user={user} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={user ? <Home /> : <Register />} />
