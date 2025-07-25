@@ -1,6 +1,9 @@
 import "./post.css";
+import { Link } from "react-router-dom"; //
 
 export default function Post() {
+  const postId = 1;
+
   return (
     <div className="post">
       <img className="postImg" src="/car.jpg" alt="" />
@@ -10,7 +13,10 @@ export default function Post() {
           <span className="postCat">Music</span>
           <span className="postCat">Life</span>
         </div>
-        <span className="postTitle">Lorem ipsum dolor sit amet </span>
+        <Link to={`/post/${postId}`} className="link">
+          {" "}
+          <span className="postTitle">Lorem ipsum dolor sit amet </span>
+        </Link>
         <hr />
         <span className="postDate">1 hour ago</span>
       </div>

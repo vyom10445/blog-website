@@ -56,3 +56,8 @@
   margin-left: 20px;
   cursor: pointer;
 }
+
+.link {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits text color from parent */
+}
