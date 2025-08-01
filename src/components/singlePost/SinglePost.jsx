@@ -1,12 +1,12 @@
 import "./singlePost.css";
 
-export default function SinglePost() {
+export default function SinglePost({ postData }) {
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
-        <img className="singlePostImg" src="/car.jpg" alt="" />
+        <img className="singlePostImg" src="{postData.img}" alt="" />
         <h1 className="singlePostTitle">
-          Lorem ipsum dolor sit amet.
+          {postData.title}
           <div className="singlePostEdit">
             <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
             <i class="singlePostIcon fa-solid fa-trash"></i>
@@ -14,40 +14,11 @@ export default function SinglePost() {
         </h1>
         <div className="singlePostInfo">
           <span className="singlePostAuthor">
-            Author : <b>vyom</b>
+            Author : <b>{postData.author}</b>
           </span>
-          <span className="singlePostDate">1 hour ago</span>
+          <span className="singlePostDate">{postData.timeAgo}</span>
         </div>
-        <p className="singlePostDesc">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quos
-          incidunt aliquid quibusdam temporibus amet earum, consequuntur officia
-          voluptatibus, provident molestiae corrupti, aliquam libero
-          necessitatibus beatae ut. Consequuntur, tempore animi. Lorem ipsum
-          dolor sit, amet consectetur adipisicing elit. Quo quos incidunt
-          aliquid quibusdam temporibus amet earum, consequuntur officia
-          voluptatibus, provident molestiae corrupti, aliquam libero
-          necessitatibus beatae ut. Consequuntur, tempore animi.Lorem ipsum
-          dolor sit, amet consectetur adipisicing elit. Quo quos incidunt
-          aliquid quibusdam temporibus amet earum, consequuntur officia
-          voluptatibus, provident molestiae corrupti, aliquam libero
-          necessitatibus beatae ut. Consequuntur, tempore animi.Lorem ipsum
-          dolor sit, amet consectetur adipisicing elit. Quo quos incidunt
-          aliquid quibusdam temporibus amet earum, consequuntur officia
-          voluptatibus, provident molestiae corrupti, aliquam libero
-          necessitatibus beatae ut. Consequuntur, tempore animi.Lorem ipsum
-          dolor sit, amet consectetur adipisicing elit. Quo quos incidunt
-          aliquid quibusdam temporibus amet earum, consequuntur officia
-          voluptatibus, provident molestiae corrupti, aliquam libero
-          necessitatibus beatae ut. Consequuntur, tempore animi.Lorem ipsum
-          dolor sit, amet consectetur adipisicing elit. Quo quos incidunt
-          aliquid quibusdam temporibus amet earum, consequuntur officia
-          voluptatibus, provident molestiae corrupti, aliquam libero
-          necessitatibus beatae ut. Consequuntur, tempore animi.Lorem ipsum
-          dolor sit, amet consectetur adipisicing elit. Quo quos incidunt
-          aliquid quibusdam temporibus amet earum, consequuntur officia
-          voluptatibus, provident molestiae corrupti, aliquam libero
-          necessitatibus beatae ut. Consequuntur, tempore animi.
-        </p>
+        <p className="singlePostDesc">{postData.content}</p>
       </div>
     </div>
   );
