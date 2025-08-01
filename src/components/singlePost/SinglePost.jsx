@@ -4,7 +4,7 @@ export default function SinglePost({ postData }) {
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
-        <img className="singlePostImg" src="{postData.img}" alt="" />
+        <img className="singlePostImg" src={postData.img} alt="" />
         <h1 className="singlePostTitle">
           {postData.title}
           <div className="singlePostEdit">
