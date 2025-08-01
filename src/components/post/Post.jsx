@@ -1,37 +1,23 @@
 import "./post.css";
 import { Link } from "react-router-dom"; //
 
-export default function Post() {
-  const postId = 1;
-
+export default function Post({ postData }) {
   return (
     <div className="post">
-      <img className="postImg" src="/car.jpg" alt="" />
+      <img className="postImg" src={postData.img} alt="" />
 
       <div className="postInfo">
         <div className="postCats">
-          <span className="postCat">Music</span>
-          <span className="postCat">Life</span>
+          <span className="postCat">{postData.category}</span>
         </div>
-        <Link to={`/post/${postId}`} className="link">
+        <Link to={`/post/${postData.id}`} className="link">
           {" "}
-          <span className="postTitle">Lorem ipsum dolor sit amet </span>
+          <span className="postTitle">{postData.title}</span>
         </Link>
         <hr />
-        <span className="postDate">1 hour ago</span>
+        <span className="postDate">{postData.timeAgo}</span>
       </div>
-      <p className="postDescription">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        temporibus ad minus tempore, accusamus officiis recusandae nesciunt
-        voluptatibus rem ipsum! Nemo nisi perspiciatis et dicta qui debitis
-        dolorum reiciendis magni?tempore, accusamus officiis recusandae nesciunt
-        voluptatibus rem ipsum! Nemo nisi perspiciatis et dicta qui debitis
-        dolorum reiciendis magni?tempore, accusamus officiis recusandae nesciunt
-        voluptatibus rem ipsum! Nemo nisi perspiciatis et dicta qui debitis
-        dolorum reiciendis magni?tempore, accusamus officiis recusandae nesciunt
-        voluptatibus rem ipsum! Nemo nisi perspiciatis et dicta qui debitis
-        dolorum reiciendis magni?
-      </p>
+      <p className="postDescription">{postData.content}</p>
     </div>
   );
 }

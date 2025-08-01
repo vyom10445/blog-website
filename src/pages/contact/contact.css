@@ -1,17 +1,16 @@
-/* src/pages/contact/contact.css */
 .contact {
-  display: flex; /* Consistent layout */
+  display: flex; 
   justify-content: center;
   padding: 20px;
-  padding-top: 70px; /* Added padding-top to push content below the navbar */
+  padding-top: 70px; 
 }
 
 .contactWrapper {
   flex: 9;
   padding: 20px;
-  background-color: #ffffff; /* Changed to a more distinct white */
+  background-color: #ffffff; 
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow for visibility */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
   margin-right: 20px;
 }
 
